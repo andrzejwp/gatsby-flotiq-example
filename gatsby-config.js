@@ -1,3 +1,6 @@
+// required to pull ENV variables
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
