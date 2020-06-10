@@ -27,6 +27,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-flotiq",
+      options: {
+        baseUrl: process.env.GATSBY_FLOTIQ_BASE_URL,
+        authToken: process.env.FLOTIQ_API_KEY,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
